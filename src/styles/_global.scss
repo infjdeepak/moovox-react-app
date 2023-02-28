@@ -19,9 +19,10 @@ body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(
     to right,
-    rgba(239, 142, 169, 0.2),
+    rgba(239, 142, 169, 0.5),
     rgba(42, 179, 191, 0.5)
   );
+  background: rgba(42, 179, 191, 0.5);
 }
 h1 {
   font-size: $header1;

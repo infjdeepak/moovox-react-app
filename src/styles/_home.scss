@@ -7,10 +7,8 @@
 .animation-movies-container,
 .horror-movies-container,
 .mystery-movies-container {
-  cursor: grab;
   overflow-x: hidden;
   padding: 2rem 5%;
-
   h2 {
     padding-bottom: 3rem;
     font-family: abril;
@@ -18,6 +16,7 @@
   }
 }
 .movies {
+  cursor: grab;
   display: flex;
   gap: 4rem;
   width: min-content;
