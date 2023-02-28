@@ -25,7 +25,7 @@ const SearchMovie = () => {
           Investigate this right now.
         </h1>
         <form>
-          <input type="text" />
+          <input type="text" placeholder="Search for a film and tv show" />
           <button>Search</button>
         </form>
       </div>

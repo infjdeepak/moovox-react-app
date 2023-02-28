@@ -2,18 +2,34 @@
   min-height: 80vh;
   padding: 4rem 5%;
   position: relative;
-  background: rgba(0, 0, 0, 0.9);
-  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  background: rgba(0, 0, 0, 0.6);
   color: whitesmoke;
   display: flex;
   align-items: center;
+  // justify-content: center;
 }
 .search-container {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   h1 {
     font-size: $header2;
     margin-bottom: 4rem;
+  }
+  form {
+    display: flex;
+    input {
+      padding: 1rem 3rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: whitesmoke;
+    }
+    button {
+      padding: 1rem 3rem;
+      border: none;
+      background: whitesmoke;
+    }
   }
 }
 .search-bg-img {
