@@ -1,0 +1,47 @@
+$header1: 5rem;
+$header2: 3.8rem;
+$header3: 3rem;
+$header4: 2.5rem;
+$header5: 2rem;
+$text: 2.5rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(239, 142, 169, 0.2),
+    rgba(42, 179, 191, 0.5)
+  );
+}
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4 {
+  font-size: $header4;
+}
+h5 {
+  font-size: $header5;
+}
+p,
+input,
+button,
+span,
+a {
+  font-size: $text;
+}
