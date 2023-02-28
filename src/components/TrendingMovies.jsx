@@ -27,6 +27,7 @@ const TrendingMovies = () => {
         className="movies inner-carousel"
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
+        dragTransition={{ transition: { duration: 1 } }}
       >
         {trending.map((movie) => (
           <MovieCard movie={movie} key={movie.id} />
