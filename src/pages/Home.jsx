@@ -10,7 +10,7 @@ import TrendingMovies from "../components/TrendingMovies";
 import AnimationMovies from "../components/AnimationMovies";
 import MysteryMovies from "../components/MysteryMovies";
 import HorrorMovies from "../components/HorrorMovies";
-
+import SearchMovie from "../components/SearchMovie";
 const Home = () => {
   //dispatch
   const dispatch = useDispatch();
@@ -30,12 +30,15 @@ const Home = () => {
       {status === "loading" ? (
         <h1>Loading....</h1>
       ) : (
-        <div className="movies-wrapper ">
-          <TrendingMovies />
-          <AnimationMovies />
-          <MysteryMovies />
-          <HorrorMovies />
-        </div>
+        <>
+          <SearchMovie />
+          <div className="movies-wrapper">
+            <TrendingMovies />
+            <AnimationMovies />
+            <MysteryMovies />
+            <HorrorMovies />
+          </div>
+        </>
       )}
     </>
   );
