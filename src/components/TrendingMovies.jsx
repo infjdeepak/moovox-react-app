@@ -8,7 +8,7 @@ import MovieCard from "./MovieCard";
 import { motion } from "framer-motion";
 
 const TrendingMovies = () => {
-  const carouselRef = useRef();
+  const carouselRef = useRef(null);
   //states
   const [width, setWidth] = useState(0);
   const { trending } = useSelector((state) => state.movies);
@@ -27,7 +27,7 @@ const TrendingMovies = () => {
         className="movies inner-carousel"
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
-        dragTransition={{ transition: { duration: 1 } }}
+        whileTap={{ cursor: "grabbing" }}
       >
         {trending.map((movie) => (
           <MovieCard movie={movie} key={movie.id} />

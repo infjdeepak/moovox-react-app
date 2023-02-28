@@ -1,3 +1,12 @@
 nav {
   padding: 1rem 5%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  background: rgb(43, 42, 42);
+  background: linear-gradient(to right, rgb(32, 89, 80), rgb(42, 179, 191));
+  // background: linear-gradient(to right, rgb(32, 89, 80), transparent);
+  a {
+    color: whitesmoke;
+  }
 }

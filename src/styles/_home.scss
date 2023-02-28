@@ -2,14 +2,12 @@
   padding: 1rem 0;
   background: rgba(245, 245, 245, 0.8);
   backdrop-filter: blur(1.5rem);
-
-  border-radius: 5rem;
 }
 .trending-movies-container,
 .animation-movies-container,
 .horror-movies-container,
 .mystery-movies-container {
-  // cursor: grab;
+  cursor: grab;
   overflow-x: hidden;
   padding: 2rem 5%;
 
@@ -22,6 +20,7 @@
 .movies {
   display: flex;
   gap: 4rem;
+  width: min-content;
 }
 
 .movie-card {
