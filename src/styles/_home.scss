@@ -1,12 +1,11 @@
 .search-wrapper {
-  min-height: 80vh;
+  min-height: 60vh;
   padding: 4rem 5%;
   position: relative;
   background: rgba(0, 0, 0, 0.6);
   color: whitesmoke;
   display: flex;
   align-items: center;
-  // justify-content: center;
 }
 .search-container {
   display: flex;
@@ -18,6 +17,8 @@
   }
   form {
     display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
     input {
       padding: 1rem 3rem;
       width: 100%;
@@ -28,7 +29,9 @@
     button {
       padding: 1rem 3rem;
       border: none;
-      background: whitesmoke;
+      background: #65dfc9;
+      cursor: pointer;
+      font-weight: 500;
     }
   }
 }

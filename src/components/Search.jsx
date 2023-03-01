@@ -20,8 +20,9 @@ const Search = () => {
     dispatch(fetchSearchMovie(query));
     setQuery("");
   };
+
   useEffect(() => {
-    setMovieBg(trending[Math.floor(Math.random() * trending.length)]);
+    setMovieBg(trending[Math.floor(Math.random() * trending.length - 1)]);
   }, []);
   return (
     <div className="search-wrapper">

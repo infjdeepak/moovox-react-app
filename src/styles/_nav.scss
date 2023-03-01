@@ -3,8 +3,14 @@ nav {
   min-height: 10vh;
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgb(24, 24, 24);
   a {
-    color: whitesmoke;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    font-weight: 400;
+    background: #65dfc9;
+    padding: 3px;
+    border-radius: 4px;
   }
 }
