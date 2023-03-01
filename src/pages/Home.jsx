@@ -25,21 +25,19 @@ const Home = () => {
     }
   }, [status]);
 
+  //rendrenig
+  if (status === "loading") {
+    return <h1>Loading....</h1>;
+  }
   return (
     <>
-      {status === "loading" ? (
-        <h1>Loading....</h1>
-      ) : (
-        <>
-          <SearchMovie />
-          <div className="movies-wrapper">
-            <TrendingMovies />
-            <AnimationMovies />
-            <MysteryMovies />
-            <HorrorMovies />
-          </div>
-        </>
-      )}
+      <SearchMovie />
+      <div className="movies-wrapper">
+        <TrendingMovies />
+        <AnimationMovies />
+        <MysteryMovies />
+        <HorrorMovies />
+      </div>
     </>
   );
 };

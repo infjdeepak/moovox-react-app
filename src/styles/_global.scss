@@ -17,12 +17,12 @@ html {
 body {
   font-family: "Abril Fatface", cursive;
   font-family: "Montserrat", sans-serif;
+  // background: rgba(42, 179, 191, 0.5);
   background: linear-gradient(
     to right,
-    rgba(239, 142, 169, 0.5),
-    rgba(42, 179, 191, 0.5)
+    rgba(101, 223, 201, 0.5),
+    rgba(108, 219, 235, 0.5)
   );
-  background: rgba(42, 179, 191, 0.5);
 }
 h1 {
   font-size: $header1;
