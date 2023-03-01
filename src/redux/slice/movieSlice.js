@@ -25,6 +25,13 @@ export const loadInitialMovies = createAsyncThunk(
     };
   }
 );
+export const fetchSearchMovie = createAsyncThunk(
+  "fetchSearchMovie",
+  async (query) => {
+    const searchMovieData = await axios.get(getSearchUrl(query));
+    return searchMovieData.data.results;
+  }
+);
 
 const movieSlice = createSlice({
   name: "movies",
@@ -59,6 +66,13 @@ const movieSlice = createSlice({
     builder.addCase(loadInitialMovies.rejected, (state, action) => {
       state.status = "failed";
       state.error = action.error.message;
+    });
+    //search movie
+    builder.addCase(fetchSearchMovie.fulfilled, (state, action) => {
+      const movies = action.payload.filter(
+        (movie) => movie.backdrop_path !== null && movie.poster_path !== null
+      );
+      state.searched = movies;
     });
   },
 });

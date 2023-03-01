@@ -10,14 +10,15 @@ import TrendingMovies from "../components/TrendingMovies";
 import AnimationMovies from "../components/AnimationMovies";
 import MysteryMovies from "../components/MysteryMovies";
 import HorrorMovies from "../components/HorrorMovies";
-import SearchMovie from "../components/SearchMovie";
+import Search from "../components/Search";
+import SearchedMovies from "../components/SearchedMovies";
 const Home = () => {
   //dispatch
   const dispatch = useDispatch();
 
   //states
   const { status } = useSelector((state) => state.movies);
-
+  const { searched } = useSelector((state) => state.movies);
   //fetching movies
   useEffect(() => {
     if (status === "idle") {
@@ -31,8 +32,10 @@ const Home = () => {
         <h1>Loading....</h1>
       ) : (
         <>
-          <SearchMovie />
+          <Search />
+
           <div className="movies-wrapper">
+            {searched.length === 0 ? "" : <SearchedMovies />}
             <TrendingMovies />
             <AnimationMovies />
             <MysteryMovies />

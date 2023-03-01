@@ -55,7 +55,8 @@
 .trending-movies-container,
 .animation-movies-container,
 .horror-movies-container,
-.mystery-movies-container {
+.mystery-movies-container,
+.searched-movies-container {
   overflow: hidden;
   padding: 2rem 5%;
   h2 {
@@ -64,6 +65,7 @@
     cursor: auto;
   }
 }
+
 .movies {
   cursor: grab;
   display: flex;
