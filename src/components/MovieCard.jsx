@@ -1,10 +1,17 @@
 //redux
+import { loadMovieDetail } from "../redux/slice/movieDetailSlice";
 //imgUrl
+import { useDispatch } from "react-redux";
 import { imgPaths } from "../api";
+//router
+import { Link } from "react-router-dom";
 const MovieCard = ({ movie }) => {
   //dispatch
-
-  //states
+  const dispatch = useDispatch();
+  //handler
+  const loadDetailHandler = () => {
+    dispatch(loadMovieDetail(movie));
+  };
   return (
     <div className="movie-card">
       <div className="movie-poster">
@@ -12,7 +19,9 @@ const MovieCard = ({ movie }) => {
       </div>
       <div className="movie-info">
         <h4>{movie.title}</h4>
-        {/* <h5>{movie.release_date}</h5> */}
+        <Link to={`/movie/${movie.id}`} onClick={loadDetailHandler}>
+          more details
+        </Link>
       </div>
     </div>
   );

@@ -84,12 +84,10 @@
   height: 55rem;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
-  cursor: pointer;
 }
 .movie-poster {
   overflow: hidden;
   border-radius: 2rem;
-
   img {
     transition: all 0.5s ease;
     pointer-events: none;
@@ -99,13 +97,21 @@
   }
 }
 .movie-info {
-  color: whitesmoke;
-  padding: 1rem;
+  padding: 2rem;
   min-height: 13rem;
+  color: whitesmoke;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
   h4 {
     font-weight: 400;
+  }
+  a {
+    font-size: $header5;
+    color: #65dfc9;
+    -webkit-user-drag: none;
+    text-decoration: underline;
   }
 }

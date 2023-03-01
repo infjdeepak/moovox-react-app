@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
 //redux
 //imgUrl
-import { imgPaths } from "../api";
+//router
+import { Link } from "react-router-dom";
+
 const MovieCard = ({ movie }) => {
   //dispatch
-
   //states
   return (
     <nav>
       <div className="logo">
-        <a href="">MoovoX</a>
+        <Link to="/">MoovoX</Link>
       </div>
     </nav>
   );
