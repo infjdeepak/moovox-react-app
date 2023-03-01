@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
       </div>
       <div className="movie-info">
         <h4>{movie.title}</h4>
-        <h5>{movie.release_date}</h5>
+        {/* <h5>{movie.release_date}</h5> */}
       </div>
     </div>
   );

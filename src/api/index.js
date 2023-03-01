@@ -30,8 +30,8 @@ const nextYear = `${year + 1}-${month}-${day}`;
 //images url
 
 export const imgPaths = {
-  medium: `https://image.tmdb.org/t/p/w500/`,
-  original: `https://image.tmdb.org/t/p/original/`,
+  medium: `https://image.tmdb.org/t/p/w500`,
+  original: `https://image.tmdb.org/t/p/original`,
 };
 
 //trending this week
