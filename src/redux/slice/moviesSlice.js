@@ -7,7 +7,6 @@ import {
   getHorrorUrl,
   getMysteryUrl,
   getSearchUrl,
-  getDetailsUrl,
 } from "../../api";
 
 export const loadInitialMovies = createAsyncThunk(
@@ -33,20 +32,21 @@ export const fetchSearchMovie = createAsyncThunk(
   }
 );
 
-const movieSlice = createSlice({
+const initialState = {
+  trending: [],
+  animation: [],
+  horror: [],
+  mystery: [],
+  searched: [],
+  error: false,
+  status: "idle",
+};
+const moviesSlice = createSlice({
   name: "movies",
-  initialState: {
-    trending: [],
-    animation: [],
-    horror: [],
-    mystery: [],
-    searched: [],
-    error: false,
-    status: "idle",
-  },
+  initialState,
   reducers: {
-    example: (state) => {
-      return { ...state };
+    clearSearchState: (state) => {
+      state.searched = [];
     },
   },
   extraReducers: (builder) => {
@@ -77,5 +77,5 @@ const movieSlice = createSlice({
   },
 });
 
-export const { example } = movieSlice.actions;
-export default movieSlice.reducer;
+export const { clearSearchState } = moviesSlice.actions;
+export default moviesSlice.reducer;

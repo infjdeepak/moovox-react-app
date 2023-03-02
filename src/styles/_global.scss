@@ -15,14 +15,15 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Abril Fatface", cursive;
+  // font-family: "Abril Fatface", cursive;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(
-    to right,
-    rgba(239, 142, 169, 0.5),
-    rgba(42, 179, 191, 0.5)
-  );
-  background: rgba(42, 179, 191, 0.5);
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(239, 142, 169, 0.5),
+  //   rgba(42, 179, 191, 0.5)
+  // );
+  // background: rgba(42, 179, 191, 0.5);
+  background: rgb(27, 27, 27);
 }
 h1 {
   font-size: $header1;

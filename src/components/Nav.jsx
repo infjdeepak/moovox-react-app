@@ -1,19 +1,20 @@
-import { motion } from "framer-motion";
 //redux
-//imgUrl
+import { useDispatch } from "react-redux";
+import { clearSearchState } from "../redux/slice/moviesSlice";
 //router
 import { Link } from "react-router-dom";
 
-const MovieCard = ({ movie }) => {
-  //dispatch
-  //states
+const Nav = () => {
+  const dispatch = useDispatch();
   return (
     <nav>
       <div className="logo">
-        <Link to="/">MoovoX</Link>
+        <Link to="/" onClick={() => dispatch(clearSearchState())}>
+          MoovoX
+        </Link>
       </div>
     </nav>
   );
 };
 
-export default MovieCard;
+export default Nav;

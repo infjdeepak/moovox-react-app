@@ -1,10 +1,11 @@
 //redux
 import { loadMovieDetail } from "../redux/slice/movieDetailSlice";
-//imgUrl
 import { useDispatch } from "react-redux";
+//imgUrl
 import { imgPaths } from "../api";
 //router
 import { Link } from "react-router-dom";
+
 const MovieCard = ({ movie }) => {
   //dispatch
   const dispatch = useDispatch();

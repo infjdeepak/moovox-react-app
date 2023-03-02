@@ -1,0 +1,17 @@
+.status-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 245, 0.5);
+}
+.status-wrapper {
+  padding: 5rem 5%;
+  width: 60%;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 27, 27);
+}

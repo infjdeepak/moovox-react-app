@@ -1,8 +1,9 @@
 //redux
-import { fetchSearchMovie } from "../redux/slice/movieSlice";
+import { fetchSearchMovie } from "../redux/slice/moviesSlice";
 import { useSelector, useDispatch } from "react-redux";
 //imgUrl
 import { imgPaths } from "../api";
+//hooks
 import { useEffect, useState } from "react";
 
 const Search = () => {
@@ -11,7 +12,7 @@ const Search = () => {
   const [movieBg, setMovieBg] = useState();
   const [query, setQuery] = useState("");
   const { trending } = useSelector((state) => state.movies);
-  //handlker
+  //handler
   const searchInputHandler = (e) => {
     setQuery(e.target.value);
   };

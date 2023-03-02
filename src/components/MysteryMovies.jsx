@@ -12,11 +12,10 @@ const MysteryMovies = () => {
   //states
   const [width, setWidth] = useState(0);
   const { mystery } = useSelector((state) => state.movies);
-  //useEffect
+  //useEffect for carousel
   useEffect(() => {
     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
   }, [width]);
-
   return (
     <motion.div ref={carouselRef} className="mystery-movies-container carousel">
       <h2>Mystery</h2>

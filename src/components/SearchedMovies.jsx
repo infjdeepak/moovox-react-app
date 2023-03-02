@@ -12,7 +12,7 @@ const SearchedMovies = () => {
   //states
   const { searched } = useSelector((state) => state.movies);
   const [width, setWidth] = useState(0);
-  //useEffect
+  //useEffect for carousel
   useEffect(() => {
     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
   }, [width, searched]);

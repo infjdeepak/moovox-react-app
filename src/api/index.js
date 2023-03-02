@@ -23,12 +23,11 @@ const year = getCurrentYear();
 const month = getCurrentMonth();
 const day = getCurrentDay();
 const currentDate = `${year}-${month}-${day}`;
-const nextDayDate = `${year}-${month}-${day + 1}`;
+// const nextDayDate = `${year}-${month}-${day + 1}`;
 const lastYear = `${year - 1}-${month}-${day}`;
-const nextYear = `${year + 1}-${month}-${day}`;
+// const nextYear = `${year + 1}-${month}-${day}`;
 
 //images url
-
 export const imgPaths = {
   medium: `https://image.tmdb.org/t/p/w500`,
   original: `https://image.tmdb.org/t/p/original`,
@@ -59,7 +58,7 @@ export const getMysteryUrl = (page = 1) => {
 export const getSearchUrl = (query, page = 1) => {
   return `${baseUrl}search/movie?api_key=${key}&page=${page}&query=${query}`;
 };
-//get details
-export const getDetailsUrl = (id) => {
-  return `${baseUrl}movie/${id}?api_key=${key}`;
-};
+// get details
+// export const getDetailsUrl = (id) => {
+//   return `${baseUrl}movie/${id}?api_key=${key}`;
+// };

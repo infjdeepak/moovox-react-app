@@ -12,11 +12,10 @@ const TrendingMovies = () => {
   //states
   const [width, setWidth] = useState(0);
   const { trending } = useSelector((state) => state.movies);
-  //useEffect
+  //useEffect for carousel
   useEffect(() => {
     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
   }, [width]);
-
   return (
     <motion.div
       ref={carouselRef}
