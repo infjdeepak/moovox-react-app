@@ -12,6 +12,7 @@ const MovieCard = ({ movie }) => {
   //handler
   const loadDetailHandler = () => {
     dispatch(loadMovieDetail(movie));
+    window.scroll(0, 0);
   };
   return (
     <div className="movie-card">

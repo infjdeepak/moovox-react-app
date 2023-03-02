@@ -6,9 +6,26 @@
   color: whitesmoke;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+.detail-movie-poster {
+  flex: 1 1 30rem;
+  text-align: center;
+  img {
+    border-radius: 4rem;
+    width: 80%;
+    height: auto;
+  }
+}
+.movie-details {
+  flex: 2 1 40rem;
+
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  position: relative;
 }
 .detail-head {
   span {

@@ -9,9 +9,12 @@
   .search-container {
     width: 90%;
   }
+  .movie-detail-wrapper {
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
   html {
     font-size: 43%;
   }
